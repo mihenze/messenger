@@ -67,7 +67,14 @@ MessengerApplication - стандартный стартовый класс дл
 }
 
 
-Для запуска необходимо:
+Не сумел подружить данное приложение с Docker, при попытки создания образа валится с ошибкой:
+Communications link failure
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:174) ~[mysql-connector-java-8.0.29.jar:8.0.29]
+...
+поэтому образа Docker нет
+
+Ps. При тестировании запросов с помощью Postman, все работали верно.
 
 
 
